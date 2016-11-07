@@ -1,4 +1,8 @@
 .blog-home {
+	h2.blog-title {
+		text-align: center;
+	}
+
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -9,5 +13,16 @@
 			width: 100%;
 			height: auto;
 		}
+	}
+}
+
+#blog-posts {
+	h1 {
+		font-family: $open-sans;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
 	}
 }

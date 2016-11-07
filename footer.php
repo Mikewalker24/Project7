@@ -21,8 +21,6 @@
     	</div>
 
 		<div class="right-container">
-			<h3>Newsletter Sign-up</h3>
-
 			<h3>Follow Us</h3>
 	    	<?php wp_nav_menu( array(
 	    	  'container' => false,

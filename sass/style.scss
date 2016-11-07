@@ -20,7 +20,7 @@
 @import 'blog-index';
 @import 'contact';
 @import 'about';
-@import 'blog-home';
+@import 'blog';
 @import 'footer';
 /*
 ====================================
@@ -41,7 +41,7 @@ section {
 }
 
 .container {
-	width: 80%;
+	width: 75%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -73,6 +73,14 @@ a {
 	}
 }
 
+// Shop
+
+#shop {
+	width: 100%;
+	h2 {
+		text-align: center;
+	}
+}
 
 
 

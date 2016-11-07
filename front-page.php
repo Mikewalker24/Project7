@@ -14,7 +14,7 @@
 		        	<div class="flickity-cell" style="background-image: url(<?php the_sub_field('hero_image'); ?>);background-size: cover;">
 		        		<h2><?php the_sub_field('hero_title'); ?></h2>
 		        		<p><?php the_sub_field('hero_subtitle'); ?></p>
-		        		<div class="button-container"><a href="#">Shop Now</a></div>
+		        		<div class="button-container"><a href="<?php bloginfo('url'); ?>/about/">Shop Now</a></div>
 		        	</div>
 		        <?php endwhile; ?>
 	        </div>
@@ -23,35 +23,37 @@
          <section class="featured-category">
 			<div class="container">
 				<h2>Featured Products</h2>
-				<div class="left">
-					<figure>
-						<img src="<?php the_field('left_image') ?>" alt="">
-						<figcaption>
-							<h3><?php the_field('left_title') ?></h3>
-							<p><?php the_field('left_description') ?></p>
-							<div class="button-container"><a href="#">Shop Now</a></div>
-						</figcaption>
-					</figure>
-				</div><!-- 
-				 --><div class="right"><!-- 
-					 --><div class="top">
-						<div class="top-left">
-							<img src="<?php the_field('top_left_image') ?>" alt="">
-						</figure>
-							
-						</div><!-- 
-						 --><div class="top-right">
-							<img src="<?php the_field('top_right_image') ?>" alt="">
-						</figure>
-						</div>
-					</div><!-- 
-					 --><div class="bottom">
+				<div class="product-container">
+					<div class="left">
 						<figure>
-							<img src="<?php the_field('bottom_image') ?>" alt="">
+							<img src="<?php the_field('left_image') ?>" alt="">
 							<figcaption>
-								<h3><?php the_field('bottom_hover_text') ?></h3>
+								<h3><?php the_field('left_title') ?></h3>
+								<p><?php the_field('left_description') ?></p>
+								<div class="button-container"><a href="<?php bloginfo('url'); ?>/about/">Shop Now</a></div>
 							</figcaption>
 						</figure>
+					</div><!-- 
+					 --><div class="right"><!-- 
+						 --><div class="top">
+							<div class="top-left">
+								<img src="<?php the_field('top_left_image') ?>" alt="">
+							</figure>
+								
+							</div><!-- 
+							 --><div class="top-right">
+								<img src="<?php the_field('top_right_image') ?>" alt="">
+							</figure>
+							</div>
+						</div><!-- 
+						 --><div class="bottom">
+							<figure>
+								<img src="<?php the_field('bottom_image') ?>" alt="">
+								<figcaption>
+									<h3><?php the_field('bottom_hover_text') ?></h3>
+								</figcaption>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -71,78 +73,9 @@
         	</div>
         </section>
 
-        <section class="new-product">
-	        <div class="container">
-	        	<h2>New Product</h2>
-		        <div class="flickity" data-flickity='{ "wrapAround": true, "cellAlign": "center" }'>
-		        	<div class="flickity-cell clearfix">
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        	</div>
-
-		        	<div class="flickity-cell">
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        		<figure>
-		        			<img src="http://placekitten.com/300/300" alt="">
-		        			<figcaption>
-		        				<h4>Small Terrariums Plant for Desk</h4>
-		        				<h5>$69</h5>
-		        			</figcaption>
-		        		</figure>
-		        	</div>
-		        </div>
-	        </div>
-        </section>
-
         <section class="blog-home">
+	        <h2 class="blog-title">Recent Posts</h2>
 	        <div class="container">
-		        
 
 		        <?php
 		            $new = new WP_Query('posts_per_page=3');

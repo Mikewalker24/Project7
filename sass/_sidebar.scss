@@ -2,6 +2,8 @@
 	width: 25%;
 	float: left;
 	padding-left: 2%;
+	
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -14,12 +16,15 @@
 		height: auto;
 		width: 100%;
 	}
+
+	#text-4 {
+		font-family: $open-sans;
+		font-size: 0.8rem;
+	}
 	
 	h3 {
 		margin: 10% 0;
-		// &:first-of-type {
-		// 	margin-top: 2%;
-		// }
+		font-family: $open-sans;
 	}
 
 
@@ -28,5 +33,11 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	#recent-posts-2 {
+		a {
+			font-size: 0.8rem;
+		}
 	}
 }

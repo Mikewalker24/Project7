@@ -12,12 +12,32 @@
 		vertical-align: top;
 		margin-left: 2%;
 		ul {
-			// width: 100%;
 			padding-left: 0;
 			list-style-type: none;
-			// li {
-			// 	width: 100%;
-			// }
+		}
+		// contact form = .wpcf
+		textarea, input[type=text], input[type=email] {
+			border: none;
+			border-bottom: 2px solid #EBEBEB;
+			outline: 2px #EBEBEB;
+			resize: none;
+			padding: 3%;
+			margin-bottom: 3%;
+		}
+
+		#submit {
+			background-color: $beige;
+			border: none;
+			padding: 5%;
+			color: white;
+			font-family: $oswald;
+			font-size: 0.8rem;
+			letter-spacing: 2.5px;
+			transition: all 0.3s ease;
+				&:hover {
+					background-color: #EBEBEB;
+					color: $beige;
+				}
 		}
 	}
 }

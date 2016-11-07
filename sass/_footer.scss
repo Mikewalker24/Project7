@@ -11,6 +11,13 @@ footer {
 	    font-weight: normal;
 	    margin-bottom: 1.5rem;
 	}
+
+	a {
+		color: #444;
+		font-size: 0.8rem;
+		white-space: nowrap;
+	}
+
 	.left-container {
 		float: left;
 		.first-menu, .second-menu {
@@ -31,11 +38,6 @@ footer {
 				display: inline;
 				flex-basis: 35px;
 				padding: 0;
-				a {
-					color: #444;
-					font-size: 0.8rem;
-					white-space: nowrap;
-				}
 			}
 		}
 	}
@@ -53,11 +55,6 @@ footer {
 				&:last-of-type {
 					margin-right: 0;
 				}
-				a {
-					color: #444;
-					font-size: 0.8rem;
-					white-space: nowrap;
-				}
 			}
 		}
 	}
@@ -66,7 +63,7 @@ footer {
 		padding: 15px 0;
 		color: #aaa;
 		p {
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			display: inline;
 		}
 		ul.menu {
@@ -78,7 +75,7 @@ footer {
 				display: inline;
 				a {
 					color: #aaa;
-					font-size: 0.8rem;
+					font-size: 0.7rem;
 					white-space: nowrap;
 				}
 			}
